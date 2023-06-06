@@ -18,3 +18,26 @@ function minMax(arr) {
 let numbers = [1, 2, 3, 4, 5];
 let result = minMax(numbers);
 console.log(`Min: ${result[0]}, Max: ${result[1]}`);  // Output: Min: 1, Max: 5
+
+
+function minMax(arr) {
+    let min = arr[0];  // Initially setting the min to the first element of the array
+    let max = arr[0];  // Similarly, initially setting the max to the first element of the array
+
+    for(let i = 1; i < arr.length; i++) {
+        if(arr[i] < min) {
+            min = arr[i];  // Updating min if a smaller number is found
+        }
+
+        if(arr[i] > max) {
+            max = arr[i];  // Updating max if a larger number is found
+        }
+    }
+
+    return [min, max];
+}
+
+// Testing the function
+let numbers = [1, 2, 3, 4, 5];
+let result = minMax(numbers);
+console.log(`Min: ${result[0]}, Max: ${result[1]}`);  // Output: Min: 1, Max: 5

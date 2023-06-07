@@ -41,4 +41,4 @@ function minMax(arr) {
 let numbers = [1, 2, 3, 4, 5];
 let result = minMax(numbers);
 console.log(`Min: ${result[0]}, Max: ${result[1]}`);  // Output: Min: 1, Max: 5
-//one two three first
+//one two three first more
